@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Operation</title>
+</head>
+<nav class="navbar navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">
+      <img src="https://www.flaticon.com/premium-icon/icons/svg/2039/2039175.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Matrix Operation
+  </a>
+</nav>
+<body>
+<br>
+<br>
+<br>
+<center> <h6>Perform Matrix operation with this app</h6>
+
+    <div  class="container">
+<form name="form" method="post" action="">
+    <br><br>
+  <a class="btn btn-dark" href="addition">ADDITION</a>
+  <a class="btn btn-dark" href="subtract">SUBTRACTION</a>
+  <a class="btn btn-dark" href="multiply">MULTIPLICATION</a>
+  <a class="btn btn-dark" href="transpose">TRANSPOSE</a>
+</form>
+<br><br>
+{% block content %}{% endblock %}
+</center>
+</body>
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+  <div class="footer-copyright text-center py-0">©Devloped By Vibin Marish & Maaz
+   <br> <a href="https://github.com/vibinmarish"> GitHub</a>
+  </div>
+
+</footer>
+</html>

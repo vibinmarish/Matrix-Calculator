@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+{% block content%}
+<form action='trans' method="post" >
+    {% csrf_token%}
+    <h2>Matrix A</h2>
+    <input type="text" name="val1" maxlength="4" size="4">
+    <input type="text" name="val2" maxlength="4" size="4">
+  <input type="text" name="val3" maxlength="4" size="4">
+    <input type="text" name="val4" maxlength="4" size="4"><br>
+  <input type="text" name="val5" maxlength="4" size="4">
+    <input type="text" name="val6" maxlength="4" size="4">
+  <input type="text" name="val7" maxlength="4" size="4">
+    <input type="text" name="val8" maxlength="4" size="4"><br>
+  <input type="text" name="val9" maxlength="4" size="4">
+    <input type="text" name="val10" maxlength="4" size="4">
+  <input type="text" name="val11" maxlength="4" size="4">
+    <input type="text" name="val12" maxlength="4" size="4"><br>
+  <input type="text" name="val13" maxlength="4" size="4">
+    <input type="text" name="val14" maxlength="4" size="4">
+  <input type="text" name="val15" maxlength="4" size="4">
+    <input type="text" name="val16" maxlength="4" size="4"><br>
+
+    <button type='submit'>TRANSPOSE</button>
+</form>
+</center>
+</div>
+{% endblock content%}
